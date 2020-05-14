@@ -1,6 +1,7 @@
 # BIGTREETECH-SKR-V1.4 Turbo CoreXY
 
 !!!!!!Updated to support my custom CoreXY Printer!!!!!!!!!
+
 --Features Enabled--
 COREXY
 CHOPPER_DEFAULT_24V
@@ -21,13 +22,11 @@ EEPROM_AUTO_INIT
 NOZZLE_PARK_FEATURE (filament change)
 ADVANCED_PAUSE_FEATURE
 BABYSTEPPING
-BABYSTEP_ZPROBE_OFFSET  
+BABYSTEP_ZPROBE_OFFSET
 HOST_ACTION_COMMANDS (Octoprint support)
 HOST_PROMPT_SUPPORT (Octoprint support)
 G29_RETRY_AND_RECOVER
 ENDSTOPS_ALWAYS_ON_DEFAULT
-
-
 
 
 32bit board with LPC1768, support marlin2.0 and smoothieware, support lcd2004/12864, On-board TMC2130 SPI interface and TMC2208 UART interface no additional wiring is 
