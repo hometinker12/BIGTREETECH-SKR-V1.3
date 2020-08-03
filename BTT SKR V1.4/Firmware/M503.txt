@@ -2,50 +2,41 @@ Send: M503
 Recv: echo:  G21    ; Units in mm (mm)
 Recv: echo:  M149 C ; Units in Celsius
 Recv: 
-Recv: echo:Filament settings: Disabled
-Recv: echo:  M200 D3.00
+Recv: echo:; Filament settings: Disabled
+Recv: echo:  M200 D1.75
 Recv: echo:  M200 D0
-Recv: echo:Steps per unit:
+Recv: echo:; Steps per unit:
 Recv: echo: M92 X80.00 Y80.00 Z400.00 E140.81
-Recv: echo:Maximum feedrates (units/s):
+Recv: echo:; Maximum feedrates (units/s):
 Recv: echo:  M203 X300.00 Y300.00 Z5.00 E25.00
-Recv: echo:Maximum Acceleration (units/s2):
+Recv: echo:; Maximum Acceleration (units/s2):
 Recv: echo:  M201 X500.00 Y500.00 Z100.00 E5000.00
-Recv: echo:Acceleration (units/s2): P<print_accel> R<retract_accel> T<travel_accel>
-Recv: echo:  M204 P2000.00 R3000.00 T2000.00
-Recv: echo:Advanced: B<min_segment_time_us> S<min_feedrate> T<min_travel_feedrate> X<max_x_jerk> Y<max_y_jerk> Z<max_z_jerk> E<max_e_jerk>
-Recv: echo:  M205 B20000.00 S0.00 T0.00 X40.00 Y40.00 Z0.40 E5.00
-Recv: echo:Home offset:
+Recv: echo:; Acceleration (units/s2): P<print_accel> R<retract_accel> T<travel_accel>
+Recv: echo:  M204 P3000.00 R3000.00 T3000.00
+Recv: echo:; Advanced: B<min_segment_time_us> S<min_feedrate> T<min_travel_feedrate> X<max_x_jerk> Y<max_y_jerk> Z<max_z_jerk> E<max_e_jerk>
+Recv: echo:  M205 B20000.00 S0.00 T0.00 X25.00 Y25.00 Z0.30 E5.00
+Recv: echo:; Home offset:
 Recv: echo:  M206 X0.00 Y0.00 Z0.00
-Recv: echo:Auto Bed Leveling:
+Recv: echo:; Auto Bed Leveling:
 Recv: echo:  M420 S0 Z0.00
-Recv: echo:  G29 W I0 J0 Z-0.63500
-Recv: echo:  G29 W I1 J0 Z-0.23850
-Recv: echo:  G29 W I2 J0 Z-0.12900
-Recv: echo:  G29 W I0 J1 Z-0.23000
-Recv: echo:  G29 W I1 J1 Z-0.01300
-Recv: echo:  G29 W I2 J1 Z0.10800
-Recv: echo:  G29 W I0 J2 Z0.48150
-Recv: echo:  G29 W I1 J2 Z0.65400
-Recv: echo:  G29 W I2 J2 Z0.92400
-Recv: echo:Material heatup parameters:
+Recv: echo:; Material heatup parameters:
 Recv: echo:  M145 S0 H180 B70 F0
 Recv: echo:  M145 S1 H240 B110 F0
-Recv: echo:PID settings:
+Recv: echo:; PID settings:
 Recv: echo:  M301 P13.52 I0.91 D50.32
-Recv: echo:Z-Probe Offset (mm):
-Recv: echo:  M851 X-50.00 Y-16.00 Z-1.39
-Recv: echo:Stepper driver current:
-Recv: echo:  M906 X900 Y900 Z800
-Recv: echo:  M906 T0 E950
+Recv: echo:; Z-Probe Offset (mm):
+Recv: echo:  M851 X-50.00 Y-16.00 Z-1.40
+Recv: echo:; Stepper driver current:
+Recv: echo:  M906 X800 Y800 Z800
+Recv: echo:  M906 T0 E800
 Recv: 
-Recv: echo:Driver stepping mode:
+Recv: echo:; Driver stepping mode:
 Recv: echo:  M569 S1 X Y Z
 Recv: echo:  M569 S1 T0 E
-Recv: echo:Linear Advance:
-Recv: echo:  M900 K0.40
-Recv: echo:Filament load/unload lengths:
+Recv: echo:; Linear Advance:
+Recv: echo:  M900 K0.00
+Recv: echo:; Filament load/unload lengths:
 Recv: echo:  M603 L0.00 U100.00
-Recv: echo:Filament runout sensor:
+Recv: echo:; Filament runout sensor:
 Recv: echo:  M412 S1 D10.00
 Recv: ok
